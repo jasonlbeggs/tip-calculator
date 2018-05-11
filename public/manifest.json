@@ -1,6 +1,6 @@
 {
-  "name": "pwa",
-  "short_name": "pwa",
+  "name": "Tip Calculator",
+  "short_name": "Tip Calc",
   "icons": [
     {
       "src": "/img/icons/android-chrome-192x192.png",
