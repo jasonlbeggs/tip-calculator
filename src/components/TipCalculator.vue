@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center justify-center container my-8 mx-auto px-4">
+  <div class="flex flex-col items-center justify-center container mx-auto px-4">
     <div class="w-full lg:w-1/2 mb-6 bg-grey-lighter rounded-lg shadow-md">
       <h1 class="bg-teal-dark text-white py-2 px-6 rounded-t-lg font-normal text-2xl">Tip Calulator</h1>
       <div class="py-6 px-6">
@@ -30,7 +30,7 @@
       </div>
     </div>
     <div class="text-center">
-      <a href="https://jasonlbeggs.com" class="text-grey-dark no-underline">Made with &hearts; by jasonlbeggs</a>
+      <a href="https://jasonlbeggs.com" class="text-grey-dark no-underline rounded p-1 focus:outline-none focus:shadow-outline">Made with &hearts; by jasonlbeggs</a>
     </div>
   </div>
 </template>
@@ -45,7 +45,7 @@ export default {
   },
   computed: {
     tip() {
-      return (this.cost * this.percent / 100).toFixed(2);
+      return ((this.cost * this.percent) / 100).toFixed(2);
     },
     total() {
       return (Number(this.cost) + Number(this.tip)).toFixed(2);
