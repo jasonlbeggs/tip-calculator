@@ -1,5 +1,8 @@
 <template>
-  <div id="app" class="font-sans text-lg leading-normal min-h-screen py-8 bg-grey-light text-grey-darkest">
+  <div
+    id="app"
+    class="font-sans text-lg leading-normal min-h-screen py-8 bg-gray-300 text-gray-800"
+  >
     <TipCalculator />
   </div>
 </template>
